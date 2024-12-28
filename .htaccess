@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# CORS Headers
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+Header set Access-Control-Allow-Headers "Authorization, Content-Type"
+
+# Authorization header'ını PHP'ye aktar
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif|ico)$ [NC]
+RewriteRule ^Home$ index.php [L,NC]
+RewriteRule ^Wishlist$ wishlist.php [L,NC]
+RewriteRule ^About$ about.php   [L,NC]
+RewriteRule ^Login$ login.php   [L,NC]
+RewriteRule ^Category$ category.php   [L,NC]
+RewriteRule ^Register$ register.php   [L,NC]
+RewriteRule ^Account$ customerDetail.php [L,NC]
+RewriteRule ^Account/([^/]+)/?$ customerDetail.php?page=$1 [L,NC]
+ErrorDocument 404 404.php

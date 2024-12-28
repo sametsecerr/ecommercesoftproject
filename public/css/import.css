@@ -1,0 +1,461 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Regular.ttf
+    );
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Bold.ttf
+    );
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Italic.ttf
+    );
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-BoldItalic.ttf
+    );
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Light.ttf
+    );
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-LightItalic.ttf
+    );
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Medium.ttf
+    );
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-MediumItalic.ttf
+    );
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-SemiBold.ttf
+    );
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf
+    );
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-Thin.ttf
+    );
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-ThinItalic.ttf
+    );
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-ExtraLight.ttf
+    );
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(
+        ../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf
+    );
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Great Vibes", cursive;
+    src: url(
+        ../fonts/GreatVibes/GreatVibes-Regular.ttf
+    );
+}
+
+:root{
+    --transparent: transparent;
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(156, 163, 175);
+    --dark-gray: rgb(79, 77, 89);
+    --blue: rgb(37, 99, 235);
+    --cyan: rgb(6, 182, 212);
+    --green: rgb(22, 163, 74);
+    --lime: rgb(132, 204, 22);
+    --red: rgb(224, 18, 21);
+    --rose: rgb(244, 63, 94);
+    --yellow: rgb(252, 255, 178);
+    --gold: rgb(250, 204, 21);
+    --orange: rgb(249, 115, 22);
+    --purple: rgb(147, 51, 234);
+    --pink: rgb(236, 72, 153);
+    --indigo: rgb(79, 70, 229);
+    --teal: rgb(20, 184, 166);
+    --bg-color: rgb(241, 241, 241);
+    --text-color: rgb(34, 34, 34);
+    --border-color: rgb(209, 213, 219);
+    --page-primary-color: #14b8a6;
+    --hover-color: #be123c;
+    --border-radius-full: 50%;
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 1.25rem;
+    --border-radius-2xl: 1.5rem;
+    --border-radius-3xl: 2rem;
+    --transition-100: all 100ms linear;
+    --transition-150: all 150ms linear;
+    --transition-200: all 200ms linear;
+    --transition-250: all 250ms linear;
+    --transition-300: all 300ms linear;
+    --transition-400: all 400ms linear;
+    --transition-500: all 500ms linear;
+    --transition-600: all 600ms linear;
+    --transition-700: all 700ms linear;
+    --transition-800: all 800ms linear;
+    --transition-900: all 900ms linear;
+    --transition-1000: all 1000ms linear;
+}
+.mirror-icon {
+    transform: scaleX(-1);
+}
+.se-container{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 4px;
+}
+.se-container-full{
+    width: 100%;
+}
+
+
+@media (min-width: 576px){
+    .se-container{
+        padding: 0 8px;
+    }
+}
+
+@media (min-width: 768px){
+    .se-container{
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .se-container{
+        padding: 0 16px;
+    }
+    .w-lg-80{
+        width: 80%;
+    }
+}
+
+
+.btn_v1{
+    background: var(--black);
+    color: var(--white);
+    padding: .75rem 3rem;
+    font-size: .85rem;
+    font-weight: 500;
+    opacity: 1;
+    cursor: pointer;
+    transition: var(--transition-300);
+    overflow: hidden;
+    z-index: 1;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    text-decoration: none;
+}
+.btn_v1:hover{
+    background: var(--transparent);
+    color: var(--black);
+    scale: 1.05;
+}
+.btn_v1_white {
+    background: var(--white);
+    color: var(--black);
+    padding: .75rem 3rem;
+    font-size: .85rem;
+    font-weight: 500;
+    opacity: 1;
+    cursor: pointer;
+    transition: var(--transition-300);
+    overflow: hidden;
+    z-index: 1;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    text-decoration: none;
+}
+.btn_v1_white:hover{
+    background: var(--transparent);
+    color: var(--white);
+    scale: 1.05;
+}
+
+.btn_v2{
+    background: var(--transparent);
+    color: var(--black);
+    padding: .875rem 1.75rem;
+    font-size: .85rem;
+    font-weight: 500;
+    opacity: 1;
+    cursor: pointer;
+    transition: var(--transition-500);
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    position: relative;
+    &:hover{
+        &::before{
+            right: 100%;
+            transition: var(--transition-500);
+        }
+        background: #f6f6f6;
+        transition: var(--transition-500);
+    }
+}
+
+.btn_v2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,.05),rgba(0,0,0,.3),rgba(0,0,0,.05));
+    transition: var(--transition-500);
+}
+
+.se-checkbox_v1{
+    width: 24px !important;
+    height: 24px !important;
+    border: 1px solid var(--border-color) !important;
+    padding: 4px !important;
+    outline: none !important;
+    --tw-ring-color: var(--transparent) !important;
+    --tw-ring-offset-width: 0px !important;
+    &:checked{
+        background: var(--black) !important;
+        border: 1px solid var(--black) !important;
+    }
+}
+
+
+.img-wrapper-animation-1{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: var(--transition-300);
+    &:hover{
+        z-index: 2;
+        &::before{
+            transition-delay: 150ms;
+            top: 0;
+        }
+        &::after{
+            transition-delay: 300ms;
+            top: 0;
+        }
+    }
+}
+.img-wrapper-animation-1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: var(--transition-300);
+}
+.img-wrapper-animation-1::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    transition: var(--transition-200);
+}
+.img-wrapper-animation-1::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    transition: var(--transition-200);
+}
+
+/* BAGDGES */
+
+
+.badge-top-right{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--hover-color);
+    color: var(--white);
+    font-size: .65rem;
+    font-weight: 400;
+    border-radius: var(--border-radius-full);
+    opacity: 1;
+    pointer-events: none;
+    aspect-ratio: 1;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* KEYFRAMES */
+
+@keyframes landingVariant1ActiveDot {
+    from {
+        transform-origin: left;
+        width: 0;
+    }
+    to {
+        transform-origin: left;
+        width: 100%;
+    }
+}
+@keyframes bounce {
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    25% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+    25% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+    25% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes marquee {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
