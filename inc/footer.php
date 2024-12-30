@@ -93,5 +93,126 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./assest/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    
+$(document).ready(function() {
+
+$('.productItemButton.favorite').click(function() {
+    console.log('Favori butonuna tıklandı');
+    
+    try {
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success', 
+            title: 'Ürün favorilere eklendi',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Ürün favorilere eklendi');
+    }
+});
+
+$('.add-to-favorites').click(function() {
+    console.log('Favori butonuna tıklandı');
+    
+    try {
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success', 
+            title: 'Ürün favorilere eklendi',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Ürün favorilere eklendi');
+    }
+});
+$('.add-to-cart').click(function() {
+    console.log('Sepete ekle butonuna tıklandı');
+    
+    try {
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'Ürün sepete eklendi', 
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Ürün sepete eklendi');
+    }
+});
+
+$('.productSize').click(function() {
+    console.log('Beden seçildi');
+    
+    try {
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'Ürün Sepete Eklendi ',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Beden seçimi yapıldı');
+    }
+});
+$('.remove-item').click(function() {
+    console.log('Beden seçildi');
+    
+    try {
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: 'Ürün sepetten silindi',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Beden seçimi yapıldı');
+    }
+});
+$('.checkout-btn').click(function() {
+    
+    try {
+        Swal.fire({
+            icon: 'info',
+            title: 'Bu alan yapım aşamasındadır',
+            showConfirmButton: true,
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Beden seçimi yapıldı');
+    }
+});
+
+$('.account-box').click(function() {
+    
+    try {
+        Swal.fire({
+            icon: 'info',
+            title: 'Bu alan yapım aşamasındadır',
+            showConfirmButton: true,
+        });
+    } catch(e) {
+        console.error('Swal hatası:', e);
+        alert('Beden seçimi yapıldı');
+    }
+});
+});
+</script>
 </body>
 </html>

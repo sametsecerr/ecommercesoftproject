@@ -18,6 +18,8 @@ RewriteRule ^About$ about.php   [L,NC]
 RewriteRule ^Login$ login.php   [L,NC]
 RewriteRule ^Category$ category.php   [L,NC]
 RewriteRule ^Register$ register.php   [L,NC]
+RewriteRule ^Product$ product.php   [L,NC]
+RewriteRule ^Cart$ cart.php   [L,NC]
 RewriteRule ^Account$ customerDetail.php [L,NC]
 RewriteRule ^Account/([^/]+)/?$ customerDetail.php?page=$1 [L,NC]
 ErrorDocument 404 404.php
