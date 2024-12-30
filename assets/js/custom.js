@@ -1,4 +1,4 @@
-var url = 'http://localhost/e-commerce/';
+var url = 'http://localhost/ecommercesoftproject/';
 $.ajaxSetup({
     beforeSend: function(xhr) {
         const token = localStorage.getItem('token');

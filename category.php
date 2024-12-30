@@ -24,7 +24,7 @@ $meta = [
             ?>
         <div class="productItem" data-hover="false">
                                 <div class="w-100 rounded position-relative overflow-hidden">
-                                    <a href="/e-commerce/product" title="See our product" class="product-img-link">
+                                    <a href="/ecommercesoftproject/product" title="See our product" class="product-img-link">
                                         <img loading="lazy" src="./public/images/product_1.webp" alt="" class="rounded productItemImg productItemImg1">
                                         <img loading="lazy" src="./public/images/product_5.webp" alt="" class="rounded productItemImg productItemImg2">
                                     </a>
